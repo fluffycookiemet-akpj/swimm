@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullPage.js Reels Example</title>
+
+    <!-- fullPage.js CSS via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        section {
+            text-align: center;
+            font-size: 3rem;
+            font-family: "Pacifico", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .section:nth-child(odd) {
+            background: hsla(321, 100%, 82%, 1);
+
+            background: linear-gradient(90deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            background: -moz-linear-gradient(90deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            background: -webkit-linear-gradient(90deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffa2de", endColorstr="#AD336D", GradientType=1);
+        }
+
+        .section:nth-child(even) {
+            background: hsla(321, 100%, 82%, 1);
+
+            background: linear-gradient(270deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            background: -moz-linear-gradient(270deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            background: -webkit-linear-gradient(270deg, hsla(321, 100%, 82%, 1) 0%, hsla(331, 54%, 44%, 1) 70%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffa2de", endColorstr="#AD336D", GradientType=1);
+        }
+
+        .fp-watermark {
+            display: none !important;
+        }
+
+        .fp-overflow.fp-is-overflow .fp-overflow.fp-auto-height,
+        .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+        .fp-is-overflow>.fp-overflow {
+            overflow-y: none !important;
+        }
+
+        .fp-is-overflow .fp-overflow.fp-auto-height,
+        .fp-is-overflow .fp-overflow.fp-auto-height-responsive,
+        .fp-is-overflow>.fp-overflow {
+            overflow-y: none;
+        }
+        .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow>.fp-overflow {
+    overflow-y: none !important;
+}
+.fp-overflow {
+            overflow-y: none !important;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container for fullPage.js -->
+    <div id="fullpage">
+        <section class="section" id="section1">Hiii</section>
+        <section class="section" id="section2">..</section>
+        <section class="section" id="section3">I love you</section>
+        <section class="section" id="section4">Agar ye koi bole</section>
+        <section class="section" id="section1">toh that means ki</section>
+        <section class="section" id="section2">you mean a lot to them</section>
+        <section class="section" id="section3">Ok? ok!</section>
+        <section class="section" id="section4">Bss.. Itna hi</section>
+        <section class="section" id="section1">...</section>
+        <section class="section" id="section2">..</section>
+        <section class="section" id="section3">.</section>
+        <section class="section" id="section4">Bss.. Itna hi</section>
+        <section class="section" id="section1">...</section>
+        <section class="section" id="section2">Scroll kyu kar rhi hai?</section>
+        <section class="section" id="section3">Smile kyu kar rhi hai?</section>
+        <section class="section" id="section3">Are you a fool?</section>
+        <section class="section" id="section3">Maybe you are &lt;3</section>
+        <section class="section" id="section4">You know I love you, right?</section>
+        <section class="section" id="section4">Now fool off</section>
+        <section class="section" id="section4">&lt;3</section>
+        
+    </div>
+
+    <!-- fullPage.js JS via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,   // enables snap scrolling
+            navigation: true,      // adds navigation dots
+            scrollingSpeed: 700,   // smooth transition speed
+        });
+    </script>
+</body>
+
+</html>
